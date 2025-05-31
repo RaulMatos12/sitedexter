@@ -1,0 +1,63 @@
+body {
+    background-image: url('imagens/sangue.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ff3c3c; /* Vermelho */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; /* Contorno branco */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #ff3c3c;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff; /* Contorno branco mais forte */
+}
+
+.filme {
+    margin: 15px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ff3c3c;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.info {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imagem-info {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; /* Contorno branco */
+}

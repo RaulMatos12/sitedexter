@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="subtitulo">Raul, especialista da comunidade — minha opinião sobre:</p><p>Nota de 0-10</p>
+    <h1>DEXTER</h1>
+
+    <!-- Lista de temporadas -->
+    <div class="filme" id="1Temporada">1. TEMPORADA</div>
+    <div id="1Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada1.jpg" alt="Dexter Temporada 1" class="imagem-info"><p>9.0</p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="2Temporada">2. TEMPORADA</div>
+    <div id="2Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada2.jpg" alt="Dexter Temporada 2" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="3Temporada">3. TEMPORADA</div>
+    <div id="3Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada3.jpg" alt="Dexter Temporada 3" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="4Temporada">4. TEMPORADA</div>
+    <div id="4Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada4.jpg" alt="Dexter Temporada 4" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="5Temporada">5. TEMPORADA</div>
+    <div id="5Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada5.jpg" alt="Dexter Temporada 5" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="6Temporada">6. TEMPORADA</div>
+    <div id="6Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada6.jpg" alt="Dexter Temporada 6" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="7Temporada">7. TEMPORADA</div>
+    <div id="7Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada7.jpg" alt="Dexter Temporada 7" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="8Temporada">8. TEMPORADA</div>
+    <div id="8Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada8.jpg" alt="Dexter Temporada 8" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="9Temporada">9. Dexter: New Blood</div>
+    <div id="9Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada9.jpg" alt="Dexter: New Blood" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <div class="filme" id="10Temporada">10. Dexter: Resurrection</div>
+    <div id="10Temporada-info" class="info" style="display: none;">
+        <img src="imagens/temporada10.jpg" alt="Dexter: Resurrection" class="imagem-info"><p></p>
+        <p class="descricao"></p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filmes = [
+                '1Temporada', '2Temporada', '3Temporada', '4Temporada',
+                '5Temporada', '6Temporada', '7Temporada', '8Temporada',
+                '9Temporada', '10Temporada'
+            ];
+
+            filmes.forEach(id => {
+                const botao = document.getElementById(id);
+                const info = document.getElementById(`${id}-info`);
+
+                botao?.addEventListener('click', () => {
+                    info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
